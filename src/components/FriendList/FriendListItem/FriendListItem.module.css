@@ -1,0 +1,51 @@
+.item {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 250px;
+  height: 70px;
+  color: #1f3349;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+.item:hover {
+  background-color: lightyellow;
+}
+
+.item:first-child {
+  margin-top: 60px;
+}
+
+.status {
+  margin-left: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.online {
+  composes: status;
+  background-color: green;
+}
+
+.offline {
+  composes: status;
+  background-color: red;
+}
+
+.avatar {
+  padding: 20px;
+  width: 48px;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
+}
